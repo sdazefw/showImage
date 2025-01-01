@@ -1,0 +1,94 @@
+/* General body styling */
+body {
+    background-color: black;
+    color: #ff5722;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Image container styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap for larger images */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* Allows images to wrap on smaller screens */
+}
+
+.image-container img {
+    width: 300px; /* Larger image size */
+    height: 300px; /* Larger image size */
+    object-fit: cover;
+    border: 2px solid #ff5722;
+    transition: transform 0.3s ease; /* Smooth transition for animation */
+}
+
+/* Hover animation for images */
+.image-container img:hover {
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Button styling */
+.download-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 40px; /* Space below the button */
+    letter-spacing: 2px; /* Increased letter spacing */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for animation */
+    font-weight: bold;
+}
+
+/* Hover animation for button */
+.download-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.1); /* Zoom in effect on hover */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px; /* Smaller font size for mobile */
+    }
+
+    .image-container img {
+        width: 250px; /* Slightly smaller image size for tablets */
+        height: 250px; /* Slightly smaller image size for tablets */
+    }
+
+    .download-btn {
+        padding: 12px 25px; /* Smaller padding for tablets */
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Smaller font size for very small screens */
+    }
+
+    .image-container img {
+        width: 200px; /* Smaller image size for small screens */
+        height: 200px; /* Smaller image size for small screens */
+    }
+
+    .download-btn {
+        padding: 10px 20px; /* Smaller padding for small screens */
+        font-size: 14px;
+    }
+}
